@@ -1,0 +1,456 @@
+@import url('https://fonts.cdnfonts.com/css/bpg-nino-mtavruli');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'BPG Nino Mtavruli', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#h1-span {
+    color: rgb(202, 0, 0);
+    text-decoration: underline;
+}
+
+#main-txt {
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(63, 63, 63);
+    margin-top: 80px;
+}
+
+#header-v2 {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(70, 70, 70);
+}
+
+#header-order-system {
+    width: 200px;
+    height: 35px;
+    background-color: rgb(187, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#texts-side {
+    margin-left: 50px;
+}
+
+header img {
+    width: 500px;
+    position: absolute;
+    top: 0;
+    margin-left: 27%;
+}
+
+nav h2 {
+    color: rgb(180, 0, 0);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav button {
+    width: 150px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid rgb(34, 34, 34);
+    cursor: pointer;
+}
+
+.services {
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 15vh;
+}
+
+.box1 {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(190, 0, 0);
+    border: none;
+    border-radius: 3px;
+    margin-left: 9%;
+}
+
+.box2 {
+    width: 284%;
+    height: 78px;
+    background-color: rgb(190, 0, 0);
+    border-radius: 3px;
+    border: none;
+    margin-left: 9%;
+    margin-top: 20px;
+}
+
+.box1 h1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.box1 p {
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    margin-left: 15px;
+}
+
+.box2 h1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.box2 p {
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    margin-left: 15px;
+}
+
+.grey-header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(36, 36, 36);
+}
+
+/* ===========================
+   RESPONSIVE FOR TABLETS
+   =========================== */
+@media (max-width: 992px) {
+
+    header img {
+        width: 350px;
+        margin-left: 20%;
+        position: relative;
+        top: 0;
+    }
+
+    #texts-side {
+        margin-left: 20px;
+    }
+
+    #main-txt {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        margin-top: 8vh;
+        row-gap: 30px;
+    }
+
+    .box1,
+    .box2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .box2 {
+        width: 90%;
+    }
+}
+
+/* ===========================
+   RESPONSIVE FOR MOBILE
+   =========================== */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav button {
+        width: 120px;
+        height: 32px;
+    }
+
+    header img {
+        width: 250px;
+        margin-left: 0;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    #texts-side {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    #main-txt {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    #header-v2 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    #header-order-system {
+        width: 180px;
+        margin-left: 0;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        row-gap: 20px;
+        height: auto;
+    }
+
+    .box1,
+    .box2 {
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .box2 {
+        width: 90%;
+    }
+
+    .grey-header {
+        height: auto;
+        padding-bottom: 50px;
+    }
+}
+
+/* ===========================
+   EXTRA SMALL MOBILE (≤ 480px)
+   =========================== */
+@media (max-width: 480px) {
+
+    header img {
+        width: 200px;
+    }
+
+    #main-txt {
+        font-size: 18px;
+    }
+
+    .box1 h1,
+    .box2 h1 {
+        font-size: 18px;
+    }
+
+    .box1 p,
+    .box2 p {
+        font-size: 12px;
+    }
+}
+
+.box3 {
+    width: 300px;
+    height: 100px;
+    background-color: rgba(190, 0, 0, 0);
+    border: none;
+    border-radius: 3px;
+    margin-left: 9%;
+    margin-top: 25vh;
+    color: white;
+}
+
+.grey-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box3 h1 {
+    font-size: 25px;
+}
+
+.box3 p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.616);
+}
+
+/* ===========================
+   GENERAL MOBILE NAV PREP
+   =========================== */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+@media (max-width: 992px) {
+    nav {
+        padding: 0 25px;
+    }
+}
+
+/* ===========================
+   MOBILE NAVIGATION (768px ↓)
+   =========================== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        padding: 12px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: rgb(50, 50, 50);
+    }
+
+    nav ul {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+        display: none;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav button {
+        width: 140px;
+    }
+}
+
+/* ===========================
+   BOXES / SERVICES FIX
+   =========================== */
+@media (max-width: 992px) {
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        margin-top: 10vh;
+        row-gap: 30px;
+        padding: 0 20px;
+    }
+
+    .box1, .box2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .box2 {
+        width: 100%;
+    }
+}
+
+/* ===========================
+   BOX3 + GREY-HEADER RESPONSIVE
+   =========================== */
+@media (max-width: 992px) {
+    .grey-header {
+        grid-template-columns: 1fr;
+        height: auto;
+        text-align: center;
+        padding-bottom: 60px;
+        row-gap: 40px;
+    }
+
+    .box3 {
+        margin-left: 0;
+        margin-top: 5vh;
+        width: 90%;
+        justify-self: center;
+    }
+}
+
+/* ===========================
+   MOBILE HEADER IMAGE
+   =========================== */
+@media (max-width: 768px) {
+    header img {
+        width: 220px;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+        margin-top: 20px;
+    }
+
+    #texts-side {
+        margin: 20px 15px;
+    }
+
+    #main-txt {
+        font-size: 20px;
+    }
+}
+
+/* ===========================
+   VERY SMALL DEVICES (≤ 480px)
+   =========================== */
+@media (max-width: 480px) {
+    header img {
+        width: 180px;
+    }
+
+    #main-txt {
+        font-size: 18px;
+    }
+
+    .box3 h1 {
+        font-size: 22px;
+    }
+
+    .box3 p {
+        font-size: 12px;
+    }
+}
